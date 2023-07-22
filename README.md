@@ -1,4 +1,4 @@
-# landing_page_lsdiscord
+# LANDING PAGE PARA UM SERVIDOR DE DISCORD.
 
 ## Projeto de treino, construção de uma landing page responsiva para o servidor no Discord Lunner's Server, utilizando HTML, CSS.
 [VISUALIZAR](https://lunnersserver.000webhostapp.com/assets/view/home.php)
