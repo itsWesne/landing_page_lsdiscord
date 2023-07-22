@@ -1,0 +1,418 @@
+/* 40px pra logo, 250px pra imagem principal */
+/* 
+HEX 1: #84474b - "marrom"
+HEX 2: #36bbd9 - "azul"
+HEX 3: #6e6621 - "verde"
+HEX 4: #cf6120 - "laranja"
+HEX 5: #ffbc6d - "bege" */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Mynerve&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(66deg, hsl(356, 30%, 40%), hsl(32, 100%, 66%));
+    background-attachment: fixed;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #ffbc6d;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22px;
+    background-color: #84474b38;
+    border-bottom: 0.66px solid #84474b;
+    
+}
+
+.header-menu {
+    display: flex;
+    gap: 26px;
+    
+}
+
+.header-img {
+    height: 66px;
+    width: 66px;
+    border-radius: 90px;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(-5px 5px 5px rgba(13, 13, 13, 0.33));
+    filter: drop-shadow(-5px 5px 5px rgba(13, 13, 13, 0.66));
+}
+
+.header-img:hover {
+    /* Aumenta o tamanho do link em 20% no hover */
+    transform: scale(1.5);
+    /* Define o ponto de referência no centro do elemento */
+    transform-origin: 50% 50%;
+
+}
+
+.header-menu-item {
+    font-family: 'Anton', sans-serif;
+    color: #84474b;
+    font-weight: 255;
+    font-size: 18px;
+    text-shadow: -4px 4px 5px rgba(0, 0, 0, 1);
+}
+
+.header-menu-item:hover {
+    color: white;
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+
+}
+
+.content {
+    padding: 6px;
+    /*border-top: 0.66px solid #84474b;*/
+    margin-bottom: 13px;
+    margin-top: 13px;
+    cursor: default;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0.2%;
+}
+
+.main-content-written {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.main-content-title {
+    font-family: 'Mynerve', cursive;
+    font-weight: 666;
+    font-size: 66px;
+    color: #ffbc6d;
+    text-shadow: -2px 2px black;
+    align-self: center;
+}
+
+.main-content-title:hover {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+.main-content-subtitle {
+    font-family: 'Mynerve', cursive;
+    font-weight: 333;
+    font-size: 22px;
+    color: #000;
+    align-self: center;
+}
+
+.main-content-subtitle:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+.main-content-button {
+    font-family: 'Mynerve', cursive;
+    font-weight: 333;
+    font-size: 32px;
+    color: #ffbc6d;
+    background-color: #84474b;
+    width: 222px;
+    height: 66px;
+    border: none;
+    box-shadow: -3px 4px 3px rgba(13, 13, 13, 0.13);
+    border-radius: 66px;
+    align-self: center;
+    cursor: pointer;
+
+}
+
+.main-content-button:hover {
+    background-color: rgba(13, 13, 13, 0.66);
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+.main-img {
+    margin-top: 33px;
+    height: 450px;
+    align-self: flex-start;
+    -webkit-filter: drop-shadow(-5px 5px 5px rgba(13, 13, 13, 0.33));
+    filter: drop-shadow(-5px 5px 5px rgba(13, 13, 13, 0.66));
+}
+
+.main-img:hover {
+    transform: scale(1.06);
+    transform-origin: 50% 50%;
+}
+
+.main-content-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.main-content-secondary-title {
+    font-family: 'Mynerve', cursive;
+    border-top: 0.66px solid #84474b;
+    padding-top: 18px;
+    font-weight: 333;
+    font-size: 26px;
+    color: #000;
+    text-shadow: -3px 4px 3px rgba(13, 13, 13, 0.22);
+    margin-bottom: 8px;
+}
+
+.main-content-secondary-title:hover {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+.main-content-secondary-subtitle {
+    font-family: 'Mynerve', cursive;
+    font-weight: 333;
+    font-size: 22px;
+    color: #000;
+    text-shadow: -3px 4px 3px rgba(13, 13, 13, 0.22);
+    max-width: 50%;
+}
+
+.main-content-secondary-subtitle:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+/*  ABOUT */
+
+.about-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4.4%;
+}
+
+.about-img {
+    height: 530px;
+    margin-top: 41.5px;
+    margin-bottom: 41.5px;
+}
+
+.about-img:hover {
+    transform: scale(1.06);
+    transform-origin: 50% 50%;
+}
+
+.about-description-written {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 30px;
+
+}
+
+.about-description-title {
+    font-family: 'Mynerve', cursive;
+    font-weight: 666;
+    font-size: 66px;
+    color: #ffbc6d;
+    text-shadow: -2px 2px black;
+    align-self: center;
+}
+
+.about-description-title:hover {
+    transform: scale(1.06);
+}
+
+.about-description-subtitle {
+    font-family: 'Mynerve', cursive;
+    font-weight: 333;
+    font-size: 22px;
+    color: #000;
+    align-self: center;
+}
+
+.about-description-subtitle:hover {
+    transform: scale(1.06);
+}
+
+.about-description-line {
+    border-top: 0.66px solid #84474b;
+    align-self: center;
+    width: 333px;
+    height: 10px;
+}
+
+/* Members */
+.members-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    gap: 0px 15px;
+    margin-bottom: 5.4%;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 450px;
+}
+
+.member-img {
+    width: 66%;
+}
+
+.member-img:hover {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 0.66px solid #84474b;
+    padding: 6px;
+    width: 100vw;
+    background-color: #84474b38;
+}
+
+.footer-span {
+    font-size: 66px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-shadow: -3px 4px 3px rgba(13, 13, 13, 0.33);
+    cursor: default;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 786px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-img {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-bottom: 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-img {
+        margin-top: 16px;
+        height: auto;
+        max-width: 66%;
+        align-self: center;
+    }
+
+    .main-content-button {
+        width: 80%;
+    }
+
+    .main-content-written {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content-title {
+        font-size: 40px;
+    }
+
+    .main-content-title:hover {
+        transform: scale(1.1);
+    }
+
+    .main-content-subtitle {
+        font-size: 18px;
+    }
+
+    .main-content-secondary {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content-secondary-title {
+        margin-top: 6px;
+    }
+
+    .main-content-secondary-title:hover {
+        transform: scale(1.1);
+    }
+
+    .about-description {
+        flex-direction: column;
+        padding: 18px;
+        margin: 0;
+    }
+
+    .main-content-secondary-subtitle {
+        max-width: 100%;
+    }
+
+    .main-content-secondary-subtitle:hover {
+        transform: scale(1.03);
+    }
+
+    .about-img {
+        height: 390px;
+        align-self: center;
+        margin-bottom: 5px;
+    }
+
+    .main-content-written {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-description-subtitle {
+        font-size: 22px;
+    }
+
+    .members-content {
+        height: auto;
+    }
+
+    .member-card {
+        flex-direction: column;
+    }
+
+    .footer-span {
+        font-size: 30px;
+    }
+}
